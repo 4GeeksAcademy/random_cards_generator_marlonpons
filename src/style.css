@@ -1,5 +1,107 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background: #36d736;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-family: Georgia, serif;
 }
+
+.container{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 960px;
+    height: 820px;
+}
+
+.cardBody{
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: aliceblue;
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    margin: 20px;
+}
+
+#upperSuitIcon, #bottomSuitIcon{
+    width: 100%;
+    font-size: 22vh;
+    font-weight: bolder;
+}
+
+
+#upperSuitIcon{
+    text-align: left;
+}
+
+#suit{
+    text-align: center;
+    font-size: 25vh;
+    font-weight: bolder;
+}
+
+#bottomSuitIcon{
+    text-align: left;
+    transform: rotate(180deg);
+}
+
+#generateCard{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    background-color: #22b59d;
+    border-radius: 10px;
+}
+
+#generateCard:hover{
+    background-color: #1f9c8bb1;
+}
+
+.controls{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    height: auto;
+    max-width: 100%;
+}
+
+.inputs{
+    display: flex;
+    box-sizing: border-box;
+    max-width: 45%;
+}
+
+.form-control{
+    height: 33px;
+    width: 50%;
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: right;
+    border-radius: 10px;
+    border: 2px solid #5e5e5e;
+}
+
+.input-group{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+
+

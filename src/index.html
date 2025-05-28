@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="./assets/img/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Random Card Generator</title>
 
     <!-- Fontawesome is our recomended library for icons -->
     <link
@@ -13,23 +13,48 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container">
+        <div class="cardBody">
+          <div id="upperSuitIcon">
+            <span class="forColor">♣</span>
+          </div>
+          <div id="suit">
+            <span>10</span>
+          </div>
+          <div id="bottomSuitIcon">
+            <span class="forColor">♣</span>
+          </div>
       </div>
+
+      <div class="controls">
+
+        <div class="inputs">
+          <div class="input-group">
+            <input type="number" class="form-control" placeholder="width" id="width" min="0" aria-describedby="basic-addon">
+            <span class="input-group-text" id="basic-addon">Width</span>
+          </div>
+            <div class="input-group">
+            <input type="number" class="form-control" max="740" id="height" aria-describedby="basic-addon">
+            <span class="input-group-text" id="basic-addon">Height</span>
+          </div>
+        </div>
+
+        <div class="theButton">
+          <button type="button" id="generateCard"><i class="fas fa-sync"></i> Generate Card</button>
+        </div>
+
+      </div>
+
     </div>
 
+    
+
     <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
+
+
